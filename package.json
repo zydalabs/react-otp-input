@@ -57,10 +57,7 @@
   "author": "Devfolio <engineering@devfolio.co> (https://devfolio.co)",
   "license": "MIT",
   "homepage": "https://github.com/zydalabs/react-otp-input",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zydalabs/react-otp-input"
-  },
+  "repository": "git@github.com:zydalabs/react-otp-input.git",
   "publishConfig": {
     "name": "@zyda/react-otp-input",
     "registry": "https://npm.pkg.github.com/"
