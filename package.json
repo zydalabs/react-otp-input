@@ -60,5 +60,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/zydalabs/react-otp-input"
+  },
+  "publishConfig": {
+    "name": "@zydalabs/react-otp-input",
+    "registry": "https://npm.pkg.github.com/"
   }
 }
