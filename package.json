@@ -1,5 +1,5 @@
 {
-  "name": "@zydalabs/react-otp-input",
+  "name": "@zyda/react-otp-input",
   "version": "2.4.0",
   "description": "A fully customizable, one-time password input component for the web built with React",
   "main": "lib/index.js",
@@ -62,7 +62,7 @@
     "url": "https://github.com/zydalabs/react-otp-input"
   },
   "publishConfig": {
-    "name": "@zydalabs/react-otp-input",
+    "name": "@zyda/react-otp-input",
     "registry": "https://npm.pkg.github.com/"
   }
 }
