@@ -101,7 +101,7 @@ class SingleOtpInput extends PureComponent {
             hasErrored && errorStyle
           )}
           type={this.getType()}
-          maxLength={this.props.numInputs}
+          maxLength={1}
           ref={this.input}
           disabled={isDisabled}
           value={value || ''}
