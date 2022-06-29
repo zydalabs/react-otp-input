@@ -1,3 +1,29 @@
+
+#Zyda
+
+
+We forked `react-otp-input` package to fix the following issues:
+
+- Add auto complete on ios. [#issue](!https://github.com/devfolioco/react-otp-input/issues/113)
+- Setting the input length to 1.
+
+
+### Install
+You can install/update it from Github directly
+
+`yarn add zydalabs/react-otp-input`
+
+
+### Make changes
+
+- make the code changes that you want.
+- update the build file.
+  
+  run `yarn build`
+- merge on the main branch.
+- re-install it.
+  `yarn add zydalabs/react-otp-input`
+
 # react-otp-input
 
 [![npm version](https://badge.fury.io/js/react-otp-input.svg)](https://badge.fury.io/js/react-otp-input) [![npm](https://img.shields.io/npm/dw/react-otp-input.svg?logo=npm)](https://www.npmjs.com/package/react-otp-input) [![npm](https://img.shields.io/bundlephobia/minzip/react-otp-input)](https://www.npmjs.com/package/react-otp-input)
