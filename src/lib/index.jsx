@@ -13,6 +13,11 @@ const SPACEBAR = 32;
 // TODO: Better implementation
 const isStyleObject = (obj) => typeof obj === 'object';
 
+const isSafariBrowser = () => {
+  const userAgent = window?.navigator.userAgent || '';
+  return userAgent.indexOf('Safari') !== -1 && userAgent.indexOf('CriOS') === -1 && userAgent.indexOf('FxiOS') === -1;
+};
+
 class SingleOtpInput extends PureComponent {
   constructor(props) {
     super(props);
@@ -101,7 +106,7 @@ class SingleOtpInput extends PureComponent {
             hasErrored && errorStyle
           )}
           type={this.getType()}
-          maxLength={1}
+          maxLength={isSafariBrowser() ? '1' : this.props.numInputs}
           ref={this.input}
           disabled={isDisabled}
           value={value || ''}
@@ -353,7 +358,7 @@ class OtpInput extends Component {
 
     return (
       <div
-        style={({display: 'flex', ...isStyleObject(containerStyle) && containerStyle})}
+        style={{ display: 'flex', ...(isStyleObject(containerStyle) && containerStyle) }}
         className={!isStyleObject(containerStyle) ? containerStyle : ''}
       >
         {this.renderInputs()}
