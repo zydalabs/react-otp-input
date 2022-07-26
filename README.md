@@ -19,10 +19,20 @@ You can install/update it from Github directly
 - make the code changes that you want.
 - update the build file.
   
-  run `yarn build`
+    `yarn build`
+- update version in `package.json` file.
 - merge on the main branch.
-- re-install it.
+- make new tag for the release.
+  
+  `git tag -a v*.*.* -m "tag message"`
+
+  
+  ex: `git tag -a v2.4.3 -m "Version 2.4.3"`
+
+- done! re-install it.
+  
   `yarn add zydalabs/react-otp-input`
+
 
 # react-otp-input
 

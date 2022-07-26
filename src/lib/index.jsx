@@ -15,7 +15,8 @@ const isStyleObject = (obj) => typeof obj === 'object';
 
 const isSafariBrowser = () => {
   const userAgent = window?.navigator.userAgent || '';
-  return userAgent.indexOf('Safari') !== -1 && userAgent.indexOf('CriOS') === -1 && userAgent.indexOf('FxiOS') === -1;
+  const vendor = window?.navigator.vendor || '';
+  return userAgent.indexOf('Safari') !== -1 && vendor.indexOf('Apple Computer, Inc.') !== -1;
 };
 
 class SingleOtpInput extends PureComponent {
