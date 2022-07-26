@@ -29,9 +29,9 @@ You can install/update it from Github directly
   
   ex: `git tag -a v2.4.3 -m "Version 2.4.3"`
 
-- done! re-install it.
+- done! just upgrade it.
   
-  `yarn add zydalabs/react-otp-input`
+  `yarn upgrade @zyda/react-otp-input`
 
 
 # react-otp-input
